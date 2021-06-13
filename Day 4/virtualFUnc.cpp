@@ -43,7 +43,7 @@ main()
 	B *q,o2;
 	p=&o2;
 	o2.f1();
-	p->f1();
+	p->f1();  // early binding so class A fucntions are called
 	p->f2();
 	p->f3();
 	p->f4();
