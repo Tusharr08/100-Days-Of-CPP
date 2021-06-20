@@ -8,11 +8,11 @@ main()
 	list <int> l1{11,22,33};
 	list <string> s{"Knp","Lko","Del","Jai"};
 	list <string>::iterator r=s.begin();
-/*	while(r!=s.end())
+	while(r!=s.end())
 	{
 		cout<<*r<<endl;
 		r++;
-	}*/
+	}
 //	cout<<l1[0];
 	cout<<*r<<"size: "<<s.size()<<endl;
 	list <int>::iterator p=l1.begin();
