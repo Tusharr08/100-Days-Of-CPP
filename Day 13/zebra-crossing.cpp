@@ -9,12 +9,10 @@ void solve()
     string s;
     cin>>s;
 
-    char res = s[0];
     int cnt =0;
     for(int i=1;i<n;i++) {
-        if(res != s[i]) {
+        if(s[i-1] != s[i]) {
             cnt++;
-            res = s[i];
         }
     }
 
@@ -22,39 +20,19 @@ void solve()
         cout<<-1<<"\n";
         return;
     }
-    if(s[0]=='0') {
-        if(k%2) {
-            for(int i=s.size()-1; i>=0; i--) {
-                if(s[i] == '1') {
-                    cout<<i+1<<"\n";
-                    return;
-                }
+    else{
+
+        for(int i=n;i>=0;i--)
+        {
+            if(k%2!=0 && s[i]!=s[0])
+            {
+                cout<<i+1<<"\n";
+                break;
             }
-        }
-        else {
-            for(int i=s.size()-1; i>=0; i--) {
-                if(s[i] == '0') {
-                    cout<<i+1<<"\n";
-                    return;
-                }
-            }
-        }
-    }
-    else {
-        if(k%2) {
-            for(int i=s.size()-1; i>=0; i--) {
-                if(s[i] == '0') {
-                    cout<<i+1<<"\n";
-                    return;
-                }
-            }
-        }
-        else {
-            for(int i=s.size()-1; i>=0; i--) {
-                if(s[i] == '1') {
-                    cout<<i+1<<"\n";
-                    return;
-                }
+            else if(k%2==0 && s[i]==s[0])
+            {
+                cout<<i+1<<"\n";
+                break;
             }
         }
     }
