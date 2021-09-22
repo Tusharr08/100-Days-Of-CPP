@@ -32,8 +32,8 @@ int main()
                 ans=false;
 
             }
-            if(ans) cout<<"VALID"<<"\n";
-            else cout<<"INVALID"<<"\n";
+            if(ans) cout<<"Valid"<<"\n";
+            else cout<<"Invalid"<<"\n";
         }
         
     }
