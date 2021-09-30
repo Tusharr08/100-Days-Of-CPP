@@ -49,5 +49,5 @@ main()
 	p4=make_pair(302,s1);
 	cout<<p4.first<<endl;
 	Student s2= p4.second;
-	s2.showStudent();
+	s1.showStudent();
 }

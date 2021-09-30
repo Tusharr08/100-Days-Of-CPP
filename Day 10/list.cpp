@@ -14,7 +14,7 @@ main()
 		r++;
 	}
 //	cout<<l1[0];
-	cout<<*r<<"size: "<<s.size()<<endl;
+	cout<<"size: "<<s.size()<<endl;
 	list <int>::iterator p=l1.begin();
 	while(p!=l1.end())
 	{
