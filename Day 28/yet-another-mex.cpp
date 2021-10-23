@@ -1,7 +1,7 @@
 #include<bits/stdc++.h>
 using namespace std;
 
-nt mex(int* arr,int n)
+int mex(int* arr,int n)
 {
     set<int> s;
     for(int i=0;i<=n+1;i++)
