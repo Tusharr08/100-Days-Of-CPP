@@ -12,6 +12,7 @@ int main() {
 		double B; cin >> B;
 		double C; cin >> C;
         cout<<A<<endl;
+		
         cout<<fixed<<setprecision(2)<<B<<endl;
         cout<<fixed<<setprecision(9)<<C<<endl;
         
